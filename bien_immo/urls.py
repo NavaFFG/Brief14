@@ -21,7 +21,7 @@ from data_view import views as dt
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', up.upload_csv, name='upload_csv'),
-    path('view/', dt.view),
+    path('view/', dt.views),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', up.index)
 ]
